@@ -1,71 +1,103 @@
 <!DOCTYPE html>
 <html lang="gl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba pruebísima</title>
+    <meta
+      name="description"
+      content="A túa mensaxe personalizada nalgunhas fachadas famosas galegas"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proxecta a túa mensaxe</title>
-  <meta name="description" content="A túa mensaxe personalizada nalgunhas fachadas famosas galegas">
+    <meta property="og:title" content="Proxecta a túa mensaxe" />
+    <meta
+      property="og:description"
+      content="A túa mensaxe personalizada nalgunhas fachadas famosas galegas"
+    />
+    <meta
+      property="og:image"
+      content="https://proxecta.netlify.com/img/card.jpg"
+    />
+    <meta property="og:url" content="https://proxecta.netlify.com/" />
 
-  <meta property="og:title" content="Proxecta a túa mensaxe">
-  <meta property="og:description" content="A túa mensaxe personalizada nalgunhas fachadas famosas galegas">
-  <meta property="og:image" content="https://proxecta.netlify.com/img/card.jpg">
-  <meta property="og:url" content="https://proxecta.netlify.com/">
+    <meta name="twitter:title" content="Proxecta a túa mensaxe" />
+    <meta
+      name="twitter:description"
+      content="A túa mensaxe personalizada nalgunhas fachadas famosas galegas"
+    />
+    <meta
+      name="twitter:image"
+      content="https://proxecta.netlify.com/img/card.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <meta name="twitter:title" content="Proxecta a túa mensaxe">
-  <meta name="twitter:description" content="A túa mensaxe personalizada nalgunhas fachadas famosas galegas">
-  <meta name="twitter:image" content="https://proxecta.netlify.com/img/card.jpg">
-  <meta name="twitter:card" content="summary_large_image">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/share/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/share/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/share/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/share/site.webmanifest" />
+    <link rel="mask-icon" href="/share/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/share/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/share/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/share/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/share/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/share/favicon-16x16.png">
-  <link rel="manifest" href="/share/site.webmanifest">
-  <link rel="mask-icon" href="/share/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/share/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="/share/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
+  <body>
+    <div class="loading">
+      <p><img src="/img/grid.svg" /></p>
+    </div>
+    <main>
+      <section class="app" hidden>
+        <header>
+          <h1>Proxecta a túa mensaxe personalizada!</h1>
+        </header>
+        <form>
+          <p>Escribe o texto que queiras e onde queres proxectalo:</p>
+          <textarea>Lorem ipsum dolor sit amet</textarea>
+          <select>
+            <option value="hercules">Torre de Hércules</option>
+            <option value="santiago">Catedral de Santiago</option>
+            <option value="vigo">Teatro García Barbón</option>
+            <option value="lugo">Muralla de Lugo</option>
+            <option value="torre">Edificio La Torre</option>
+            <option value="jofre">Teatro Jofre</option>
+            <option value="peregrina">A Peregrina</option>
+            <option value="random">Un edificio calquera</option>
+          </select>
+        </form>
 
-<body>
-  <div class="loading">
-    <p><img src="/img/grid.svg"></p>
-  </div>
-  <main>
-    <section class="app" hidden>
-      <header>
-        <h1>Proxecta a túa mensaxe personalizada!</h1>
-      </header>
-      <form>
-        <p>Escribe o texto que queiras e onde queres proxectalo:</p>
-        <textarea>
-Lorem ipsum dolor sit amet</textarea>
-        <select>
-          <option value="hercules">Torre de Hércules</option>
-          <option value="santiago">Catedral de Santiago</option>
-          <option value="vigo">Teatro García Barbón</option>
-          <option value="lugo">Muralla de Lugo</option>
-          <option value="torre">Edificio La Torre</option>
-          <option value="jofre">Teatro Jofre</option>
-          <option value="peregrina">A Peregrina</option>
-          <option value="random">Un edificio calquera</option>
-        </select>
-      </form>
+        <canvas width="750" height="1000"></canvas>
 
-      <canvas width="750" height="1000"></canvas>
+        <p class="save"><button>Gardar imaxe</button></p>
 
-      <p class="save"><button>Gardar imaxe</button></p>
+        <p>
+          Feito con 🤪 por <a href="https://twitter.com/bertez">@bertez</a>.
+        </p>
+        <p>
+          O código fonte
+          <a href="https://github.com/bertez/proxecta"
+            >está dispoñible en github</a
+          >
+        </p>
+      </section>
+    </main>
 
-      <p>Feito con 🤪 por <a href="https://twitter.com/bertez">@bertez</a>.</p>
-      <p>O código fonte <a href="https://github.com/bertez/proxecta">está dispoñible en github</a></p>
-
-    </section>
-  </main>
-
-  <script type="module" src="/src/index.js?v4"></script>
-</body>
-
+    <script type="module" src="/src/index.js?v4"></script>
+  </body>
 </html>
